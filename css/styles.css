@@ -103,3 +103,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.descricao{
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 1em;
+  color: white;
+}
