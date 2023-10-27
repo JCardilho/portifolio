@@ -47,7 +47,7 @@ body {
 }
 .title_profile {
   width: 90%;
-  padding: 20px;
+  padding: 50px;
   border-bottom-width: 4px;
 }
 .title_profile p {
@@ -62,7 +62,7 @@ body {
 }
 .capa div {
   display: inline-block;
-  height: 650px;
+  height: 380px;
   padding-left: 50px;
 
   padding-top: 50px;
@@ -89,6 +89,10 @@ body {
   margin-top: -26px;
   font-family: "Montserrat", sans-serif;
 }
+.profile-title h3 {
+  color: coral;
+  font-family: "Montserrat", sans-serif;
+}
 
 .capa span {
   color: green;
@@ -97,15 +101,27 @@ body {
 
 .centralizar {
   width: 100%;
-  height: 900px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .descricao{
+  padding: 50px ;
   display: inline-block;
   font-family: "Montserrat";
   font-size: 1em;
   color: white;
+}
+.descricao h3{
+  color: coral;
+  font-family: "Montserrat", sans-serif;
+}
+.descricao h2{
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  
 }
