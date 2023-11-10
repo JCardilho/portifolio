@@ -136,15 +136,32 @@ body {
   font-weight: normal;
   
 }
+@keyframes profile-pic {
+  0% {transform: translate(0px, 20px)}
+  100% {transform: translate(0px, 0px)}
+}
+
+@keyframes profile-title {
+  0% {transform: translate(0px, -20px)}
+  100% {transform: translate(0px, 0px)}
+}
+
+@keyframes navegacao {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
 @media (max-width: 1000px) {
 
-  .navigation li {
+  .navigation  li {
       display: none;
+      
   }
 
   .navigation li.threeline-icon {
       display: inline-block;
+     
   }
 }
 
