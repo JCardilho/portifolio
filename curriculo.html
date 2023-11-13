@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head class="scroll-smooth">
     <title>Jose luiz - portifolio</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -10,76 +10,181 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e12f9f94c0.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>Portifolio</li>
-        <li>Curriculo</li>
-        <li>Contato</li>
+    <div class="navigation transition-all " id="navigation">
+      <ul class="!text-white gap-4">
+        <li><a href="./index.html" class="hover:text-green-700 transition-all  active:!text-green-600">Home</a></li>
+        <li><a href="./portfolio.html" class="hover:text-green-700 transition-all active:!text-green-600">Portfólio</a></li>
+        <li><a href="#" class="hover:text-green-700 !text-green-700 font-bold transition-all active:!text-green-600">Curriculo</a></li>
+        <li><a href="./contato.html" class="hover:text-green-700 transition-all active:!text-green-600">Contato</a></li>
+        <li id="threeline-icon" class="threeline-icon cursor-pointer" onclick="openNav()">&#9776</li>
       </ul>
     </div>
-    <div class="title_profile">
-      <p>Home > Curriculo</p>
+
+    <div class="title_profile !border-b-4 border-gray-500 flex flex-col w-full !p-4 gap-1" id="inicio">
+      <p><a href="./index.html" class="hover:text-white active:text-green-600 transition-all">Home</a> > <a class="text-green-700 hover:text-green-600 active:text-green-500" href="#">Curriculo</a></p>
       <h2>Currículo</h2>
       <h4>DADOS PESSOAIS</h4>
-      <span><hr></span>
     </div>
 
-    <div class="centralizar">    
-      <div class="capa">
-        <div class="profile-pic">
-          <img src="images/fotoperfil.png" alt="Jose Cardilho" />
+    <div class="centralizar !h-auto !border-b-4 border-gray-500 pb-7">    
+      <div class="flex w-full gap-4 lg:gap-10 flex-wrap items-center justify-center mt-6 flex-row ">
+        <div class="flex justify-center items-center transition-all">
+          <img src="images/fotoperfil.png" class="rounded-full transition-all ring-8 ring-green-700 hover:ring-8 hover:ring-green-800 active:ring-green-600 cursor-pointer" alt="Jose Cardilho" />
         </div>
-        <div class="profile-title">        
-          <h1>Jose Luiz <span>Cardilho </span></h1>
-          <h3>Data de Nascimento:</h3>
-							<p>18/06/1976</p>
-						<h3>Residência:</h3>
-							<p>Itapetininga - SP, Brasil</p>
+        <div class="profile-title gap-8 flex flex-col  text-center lg:text-start">
+          <h1 class="text-green-700 flex flex-row lg:flex-col gap-0 sm:gap-4 lg:gap-0 flex-col sm:flex-row flex-wrap">Jose Luiz <span class="lg:text-green-600 lg:!text-4xl">Cardilho </span></h1>
+          <h2 class="text-white">Desenvolvedor</h2>
+ 
+          <div class="flex flex-col gap-2">
+            <h3>Data de Nascimento:</h3>
+              <p class="text-white">18/06/1976</p>
+            <h3>Residência:</h3>
+              <p class="text-white">Itapetininga - SP, Brasil</p>
+          </div>
         </div>
+      </div>
       </div>
     
     </div>
-    <div class="descricao" >
-      <h3>Idiomas:</h3>
-        <p>Português (Nativo)</p>
-        <p>Idioma 2</p>
-        <p>Idioma 3</p>       
-        <h2>Sobre Mim</h2>
-            <p>Neste espaço escreva uma história sobre sua carreira. Fale sobre sua trajetória, suas conquistas e sobre o que você gosta de fazer. Pode incluir algo breve sobre o que você faz em seu tempo livre.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ipsum vitae malesuada ultrices. Proin suscipit nulla odio, sit amet cursus ipsum fringilla ac. Morbi et turpis odio. Praesent diam ex, malesuada ornare neque et, placerat tincidunt nunc. Ut sit amet ex tincidunt, viverra nisl vitae, aliquam purus. Nam purus dolor, maximus in quam sed, aliquam congue ipsum. Integer eleifend id ante sed porta.</p>
-            <p>Sed posuere sit amet mi ac rhoncus. Donec ac pretium nibh. Curabitur id nisi et lorem efficitur molestie. Quisque diam nulla, pulvinar sit amet porttitor id, mollis viverra leo. Fusce in tellus porttitor, suscipit turpis et, faucibus dui. Donec sit amet magna id nunc bibendum fermentum. Praesent quam odio, venenatis non tellus eu, molestie luctus erat. Mauris eu ultricies metus.</p>
+    <div class="text-white px-4 py-8 text-center sm:text-left gap-12 sm:gap-8 flex flex-col w-full"  >
 
-        
-        <h2>Educação</h2>
-          <h3>data-Em andamento</h3>
-            <p>Curso/Mestrado/Universidade</p>
-          <h3>data-data</h3>
-            <p>Curso/Mestrado/Universidade</p>
-          <h3>data-data</h3>
-            <p>Curso/Mestrado/Universidade</p>    
-        <h2>Habilidades</h2>
-          <h3>Tema 1</h3>
-            <p>Habilidade 1 / Habilidade 2...</p>
-          <h3>Tema 1</h3>
-            <p>Habilidade 1 / Habilidade 2...</p>
-          <h3>Tema 1</h3>
-            <p>Habilidade 1 / Habilidade 2...</p>
-          <h3>Tema 1</h3>
-            <p>Habilidade 1 / Habilidade 2...</p>    
-        <h2>Experiência de Trabalho</h2>
-          <h3>data-data</h3>
-            <p>Função - empresa - local</p>
-          <h3>data-data</h3>
-            <p>Função - empresa - local</p>
-          <h3>data-data</h3>
-            <p>Função - empresa - local</p>    
-        <h2>Contato</h2>
-            <p>seu e-mail aqui</p>
-            <p>seu telefone aqui</p>
-      <a href="#">Voltar ao início<a>
-    </di>
+      <div class=""> 
+        <h3 class="font-bold text-orange-400">Idiomas:</h3>
+          <ul class="sm:list-disc justify-center items-center sm:justify-start sm:items-start py-4 px-8">
+            <li>Português (Nativo)</li>
+            <li>Idioma 2</li>
+            <li>Idioma 3</li>
+          </ul>
+        </div> 
+
+        <div>
+          <h2 class="font-bold text-orange-400">Sobre Mim</h2>
+            <p class="p-4 flex w-full flex-wrap text-justify"> 
+              Neste espaço escreva uma história sobre sua carreira. Fale sobre sua trajetória, suas conquistas e sobre o que você gosta de fazer. Pode incluir algo breve sobre o que você faz em seu tempo livre.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque ipsum vitae malesuada ultrices. Proin suscipit nulla odio, sit amet cursus ipsum fringilla ac. Morbi et turpis odio. Praesent diam ex, malesuada ornare neque et, placerat tincidunt nunc. Ut sit amet ex tincidunt, viverra nisl vitae, aliquam purus. Nam purus dolor, maximus in quam sed, aliquam congue ipsum. Integer eleifend id ante sed porta.
+              Sed posuere sit amet mi ac rhoncus. Donec ac pretium nibh. Curabitur id nisi et lorem efficitur molestie. Quisque diam nulla, pulvinar sit amet porttitor id, mollis viverra leo. Fusce in tellus porttitor, suscipit turpis et, faucibus dui. Donec sit amet magna id nunc bibendum fermentum. Praesent quam odio, venenatis non tellus eu, molestie luctus erat. Mauris eu ultricies metus.
+            </p>
+        </div>
+
+        <div>
+          <h2 class="font-bold text-orange-400 ">Educação</h2>
+
+          <ul class="py-4 px-8 flex flex-col gap-6 sm:list-disc justify-center items-center sm:justify-start sm:items-start">
+            <li class="flex">
+                <p class="flex flex-col text-xl font-semibold">
+                  2021 - Em andamento
+                  <span class="text-green-700 text-sm font-normal">Curso/Mestrado/Universidade</span>
+                </p>
+            </li>
+
+            <li class="flex">
+              <p class="flex flex-col text-xl font-semibold">
+                2021 - Em andamento
+                <span class="text-green-700 text-sm font-normal">Curso/Mestrado/Universidade</span>
+              </p>
+            </li>
+
+            <li class="flex">
+              <p class="flex flex-col text-xl font-semibold">
+                2021 - Em andamento
+                <span class="text-green-700 text-sm font-normal">Curso/Mestrado/Universidade</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-bold text-orange-400">Habilidades</h2>
+
+          <ul class="py-4 px-8 flex flex-col gap-6 sm:list-disc justify-center items-center sm:justify-start sm:items-start">
+            <li class="flex">
+              <p class="flex flex-col text-xl font-semibold">
+                Tema 1
+                <span class="text-green-700 text-sm font-normal">Habilidade 1 / Habilidade 2...</span>
+              </p>
+            </li>
+
+            <li class="flex">
+              <p class="flex flex-col text-xl font-semibold">
+                Tema 1
+                <span class="text-green-700 text-sm font-normal">Habilidade 1 / Habilidade 2...</span>
+              </p>
+            </li>
+
+            <li class="flex">
+              <p class="flex flex-col text-xl font-semibold">
+                Tema 1
+                <span class="text-green-700 text-sm font-normal">Habilidade 1 / Habilidade 2...</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-bold text-orange-400">Experiência de Trabalho</h2>
+
+          <ul class="py-4 px-8 flex flex-col gap-6 sm:list-disc justify-center items-center sm:justify-start sm:items-start">
+            <li class="flex">
+              <p class="flex flex-col text-xl font-semibold">
+                Data - Data 
+                <span class="text-green-700 text-sm font-normal">Função - Empresa - Local</span>
+              </p>
+            </li>
+
+            <li class="flex">
+              <p class="flex flex-col text-xl font-semibold">
+                Data - Data 
+                <span class="text-green-700 text-sm font-normal">Função - Empresa - Local</span>
+              </p>
+            </li>
+
+            <li class="flex">
+              <p class="flex flex-col text-xl font-semibold">
+                Data - Data 
+                <span class="text-green-700 text-sm font-normal">Função - Empresa - Local</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-bold text-orange-400">Contatos</h2>
+
+          <ul class="py-4 px-8 flex flex-col gap-6 sm:list-disc justify-center items-center sm:justify-start sm:items-start">
+            <li class="flex">
+              <a href="mailto:teste@teste.com" class="hover:text-green-600 transition-all"> 
+                <p class="flex flex-col text-xl font-semibold"> 
+                  teste@teste.com
+                  <span class="text-green-700 text-sm font-normal">
+                    E-mail
+                  </span>
+                </p>
+              </a>
+            </li>
+
+            <li class="flex">
+              <a href="tel:+5515999999999" class="hover:text-green-600 transition-all"> 
+                <p class="flex flex-col text-xl font-semibold"> 
+                  (15) 99999-9999
+                  <span class="text-green-700 text-sm font-normal">
+                    Telefone
+                  </span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+
+    <a href="#inicio" class="fixed right-4 bottom-4 rounded-full ring-2 ring-gray-700 text-green-600 shadow-lg w-14 h-14 justify-center items-center flex font-bold  text-4xl cursor cursor-pointer transition-all animate-bounce bg-gray-900">
+      ↑
+    </a>
+
   </body>
 </html>

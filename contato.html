@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jose luiz - portifolio</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="js/script.js "> </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e12f9f94c0.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="m-4">
+    <div class="navigation transition-all " id="navigation">
+      <ul class="!text-white gap-4">
+        <li><a href="./index.html" class="hover:text-green-700 transition-all active:!text-green-600">Home</a></li>
+        <li><a href="./portfolio.html" class="hover:text-green-700 transition-all active:!text-green-600">Portfólio</a></li>
+        <li><a href="./curriculo.html" class="hover:text-green-700 transition-all active:!text-green-600">Curriculo</a></li>
+        <li><a href="#" class="hover:text-green-700 transition-all active:!text-green-600 !text-green-700 font-bold">Contato</a></li>
+        <li id="threeline-icon" class="threeline-icon cursor-pointer" onclick="openNav()">&#9776</li>
+      </ul>
+    </div>
+
+      <div class="flex w-full gap-4 lg:gap-10 flex-wrap mt-6 flex-row justify-center items-center sm:justify-start sm:items-start">
+
+        <div class="flex flex-col w-full gap-4 p-8 justify-center items-center sm:justify-start sm:items-start">
+          <h1 class="font-bold text-orange-400 text-4xl">Contatos</h1>
+
+          <ul class="py-4 px-8 flex flex-col gap-6 sm:list-disc justify-center items-center sm:justify-start sm:items-start text-white">
+            <li class="flex">
+              <a href="mailto:teste@teste.com" class="hover:text-green-600 transition-all"> 
+                <p class="flex flex-col text-xl font-semibold"> 
+                  <span class="text-green-700 text-sm font-normal text-xl">
+                    E-mail
+                  </span>
+                  teste@teste.com
+                </p>
+              </a>
+            </li>
+
+            <li class="flex">
+              <a href="tel:+5515999999999" class="hover:text-green-600 transition-all"> 
+                <p class="flex flex-col text-xl font-semibold"> 
+                  <span class="text-green-700 text-sm font-normal text-xl">
+                    Telefone
+                  </span>
+                  (15) 99999-9999
+                </p>
+              </a>
+            </li>
+
+            <li class="flex">
+              <div class="transition-all"> 
+                <p class="flex flex-col text-xl font-semibold !gap-4 flex flex-col"> 
+                  <span class="text-green-700 text-sm font-normal text-xl">
+                    Redes Sociais
+                  </span>
+                  
+                  <div class="justify-start items-center flex gap-2 my-2">
+                    <div class="hover:text-green-600  active:text-green-500 text-lg">
+                      <a href="#">
+                        <i class="fa-brands fa-instagram" ></i>
+                      </a>
+                    </div> 
+                    <div class="hover:text-green-600  active:text-green-500 text-lg">
+                      <a href="#">
+                        <i class="fa-brands fa-facebook" ></i>
+                      </a>
+                    </div> 
+                    <div class="hover:text-green-600  active:text-green-500 text-lg">
+                      <a href="#">
+                        <i class="fa-brands fa-youtube" ></i>
+                      </a>
+                    </div> 
+                    <div class="hover:text-green-600  active:text-green-500 text-lg">
+                      <a href="#">
+                        <i class="fa-brands fa-linkedin" ></i>
+                      </a>
+                    </div> 
+                  </div>
+                </p>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

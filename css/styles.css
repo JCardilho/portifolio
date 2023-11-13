@@ -1,15 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
  */
 
-html,body {
-  margin: 0;
-  padding: 0;
-}
-
+html,
 body {
   background-color: #2b2b2b;
-  color: white;
-  height: 56px;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 .navigation {
   background-color: #2b2b2b;
@@ -23,7 +20,7 @@ body {
   padding: 0;
   text-align: right;
 }
-.navigation li {  
+.navigation li {
   display: inline-block;
   color: white;
   line-height: 56px;
@@ -34,8 +31,7 @@ body {
   color: white;
 }
 
-
-.navigation li.threeline-icon{
+.navigation li.threeline-icon {
   display: none;
 }
 .title_profile h1 {
@@ -67,16 +63,22 @@ body {
 }
 .capa {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   color: white;
+  column-gap: 85px;
 }
 .capa div {
-  display: inline-block;
-  height: 380px;
-  padding-left: 50px;
-
-  padding-top: 50px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .linha {
@@ -89,6 +91,16 @@ body {
 .profile-pic img {
   width: 320px;
   border-radius: 90%;
+}
+
+@media (max-width: 1000px) {
+  .profile-pic img {
+    width: 95%;
+  }
+
+  .capa {
+    flex-direction: column;
+  }
 }
 
 .profile-title h1 {
@@ -118,59 +130,67 @@ body {
   justify-content: center;
   align-items: center;
 }
-.descricao{
-  padding: 50px ;
+.descricao {
+  padding: 50px;
   display: inline-block;
   font-family: "Montserrat";
   font-size: 1em;
   color: white;
 }
-.descricao h3{
+.descricao h3 {
   color: coral;
   font-family: "Montserrat", sans-serif;
 }
-.descricao h2{
+.descricao h2 {
   color: white;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: normal;
-  
 }
 @keyframes profile-pic {
-  0% {transform: translate(0px, 20px)}
-  100% {transform: translate(0px, 0px)}
+  0% {
+    transform: translate(0px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes profile-title {
-  0% {transform: translate(0px, -20px)}
-  100% {transform: translate(0px, 0px)}
+  0% {
+    transform: translate(0px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes navegacao {
-  0% {opacity: 0;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1000px) {
-
-  .navigation  li {
-      display: none;
-      
+  .navigation li a {
+    display: none;
   }
 
   .navigation li.threeline-icon {
-      display: inline-block;
-     
+    display: inline-block;
   }
 }
 
 .menujs {
   height: auto;
- 
 }
 .menujs ul {
-  background-color: chocolate;
   height: auto;
   text-align: center;
   padding-left: 15%;
@@ -178,7 +198,6 @@ body {
 }
 
 .menujs li {
-  background-color: red;
   display: block;
-  border-bottom:solid grey 1px ;
+  border-bottom: solid grey 1px;
 }

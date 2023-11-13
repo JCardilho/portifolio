@@ -11,25 +11,27 @@
       rel="stylesheet"
     />
     <script type="text/javascript" src="js/script.js "> </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/e12f9f94c0.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <div class="navigation menujs">
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Potifolio</a></li>
-        <li><a href="curriculo.html" >Curriculo</a></li>
-        <li><a href="">Contato</a></li>
-        <li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776</li>
+  <body class="m-4">
+    <div class="navigation transition-all " id="navigation">
+      <ul class="!text-white gap-4">
+        <li><a href="#" class="hover:text-green-700 transition-all !text-green-700 font-bold active:!text-green-600">Home</a></li>
+        <li><a href="./portfolio.html" class="hover:text-green-700 transition-all active:!text-green-600">Portfólio</a></li>
+        <li><a href="./curriculo.html" class="hover:text-green-700 transition-all active:!text-green-600">Curriculo</a></li>
+        <li><a href="./contato.html" class="hover:text-green-700 transition-all active:!text-green-600">Contato</a></li>
+        <li id="threeline-icon" class="threeline-icon cursor-pointer" onclick="openNav()">&#9776</li>
       </ul>
     </div>
 
-      <div class="capa">
-        <div class="profile-pic">
-          <img src="images/fotoperfil.png" alt="Jose Cardilho" />
+      <div class="flex w-full gap-4 lg:gap-10 flex-wrap items-center justify-center mt-6 flex-row ">
+        <div class="flex justify-center items-center transition-all">
+          <img src="images/fotoperfil.png" class="rounded-full transition-all ring-8 ring-green-700 hover:ring-8 hover:ring-green-800 active:ring-green-600 cursor-pointer" alt="Jose Cardilho" />
         </div>
-        <div class="profile-title">
-          <h1>Jose Luiz <span>Cardilho </span></h1>
-          <h2>Desenvolvedor</h2>
+        <div class="profile-title gap-8 flex flex-col  text-center lg:text-start">
+          <h1 class="text-green-700 flex flex-row lg:flex-col gap-0 sm:gap-4 lg:gap-0 flex-col sm:flex-row flex-wrap">Jose Luiz <span class="lg:text-green-600 lg:!text-4xl">Cardilho </span></h1>
+          <h2 class="text-white">Desenvolvedor</h2>
         </div>
       </div>
     </div>
