@@ -12,6 +12,7 @@ body {
   background-color: #2b2b2b;
   color: white;
   height: 56px;
+  animation: animação_entrada 2s ease-in-out;
 }
 
 .navigation ul {
@@ -61,6 +62,9 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #646464;
 }
+.img_inicial {
+  animation: animação_entrada_baixo_cima 2s ease-in-out;
+}
 .capa {
   width: 100%;
   height: auto;
@@ -109,8 +113,9 @@ body {
     display: inline-block;
   }
 }
-
-
+.profile-title {
+  animation: animação_entrada_cima_baixo 2s ease-in-out;
+}
 
 .profile-title h1 {
   text-transform: uppercase;
@@ -157,7 +162,6 @@ body {
   font-weight: normal;
 }
 
-
 .menujs {
   height: auto;
 }
@@ -171,4 +175,34 @@ body {
 .menujs li {
   display: block;
   border-bottom: solid grey 1px;
+}
+@keyframes animação_entrada {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animação_entrada_baixo_cima {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes animação_entrada_cima_baixo {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
